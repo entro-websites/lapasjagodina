@@ -114,7 +114,7 @@
   .hero-copy{container-type:inline-size;min-width:0;}
   .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;border-radius:999px;background:#fff;box-shadow:0 8px 24px rgba(21,16,20,.06);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;}
   .pill b{background:var(--pink);color:#fff;border-radius:999px;padding:4px 12px;letter-spacing:.08em;}
-  .hero h1{font-variation-settings:"SOFT" 100,"opsz" 144;margin:28px 0 28px;font-size:8.6vw;font-size:clamp(40px,20cqi,120px);font-weight:500;letter-spacing:-.035em;line-height:1.02;}
+  .hero h1{font-variation-settings:"SOFT" 100,"opsz" 144;margin:28px 0 28px;font-size:8.6vw;font-size:clamp(40px,16cqi,88px);font-weight:500;letter-spacing:-.035em;line-height:1.02;}
   .hero h1 .ln{display:block;white-space:nowrap;overflow:hidden;padding:0 .08em .08em 0;margin-bottom:-.08em;}
   .hero h1 .ln > span{display:inline-block;}
   .hero h1 em{font-style:italic;position:relative;}
@@ -256,7 +256,8 @@
   .g4{grid-column:6/9;grid-row:span 2;}
   .g5{grid-column:9/13;grid-row:span 1;}
   .g5.note{background:var(--ink);color:#fff;padding:20px 24px;display:flex;align-items:center;gap:16px;}
-  .g5.note img{width:56px;height:auto;flex:none;background:#fff;border-radius:50%;padding:4px;}
+  .g5.note img{position:static;width:56px;height:56px;object-fit:contain;flex:none;background:#fff;border-radius:50%;padding:4px;transform:none;}
+  .g5.note:hover img{transform:none;}
   .g5.note p{font-size:16px;font-weight:600;line-height:1.4;}
   .clip-rv{clip-path:inset(100% 0 0 0);transition:clip-path 1.2s var(--ease);}
   .clip-rv.in{clip-path:inset(0 0 0 0);}
